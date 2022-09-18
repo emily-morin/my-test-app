@@ -3,6 +3,17 @@ import { choice, remove } from "./helpers";
 
 const foods = [ '🍇', '🍈', '🍉', '🍊', '🍋', '🍌', '🍍', '🍎', '🍏', '🍐', '🍒', '🍓', '🥝', '🍅', '🥑' ];
 
+let foodOptions = document.createElement('div');
+
+for (let f of foods) {
+    let fruitButton = document.createElement('button');
+    fruitButton.classList.add("fruit-button");
+    fruitButton.innerHTML = f;
+    foodOptions.appendChild(fruitButton);
+}
+
+
+
 console.log(`We have ${foods.length} mouth-watering fruits.`);
 
 const randomFruit = choice(foods);
