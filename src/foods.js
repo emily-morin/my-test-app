@@ -12,8 +12,6 @@ for (let f of foods) {
     foodOptions.appendChild(fruitButton);
 }
 
-
-
 console.log(`We have ${foods.length} mouth-watering fruits.`);
 
 const randomFruit = choice(foods);
