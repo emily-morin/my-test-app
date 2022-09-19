@@ -14,6 +14,8 @@ class Fruits extends Component {
     chooseFruit = (e) => {
         let chosenFruit = e.target.value;
 
+        alert(`You clicked ${chosenFruit} !`);
+
         let newChoices = [chosenFruit, ...this.state.choices];
 
         this.setState({
@@ -21,9 +23,9 @@ class Fruits extends Component {
         });
     }
 
-    foodOptions = this.fruits.map((f) => {
+    foodOptions = this.fruits.map((fruit, index) => {
         return (
-            <button onClick={this.chooseFruit} key={f} className="Fruits-button">{f}</button>
+            <button onClick={this.chooseFruit} key={index} value={fruit} className="Fruits-button">{fruit}</button>
         );
     }
     );
