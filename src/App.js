@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Fruits from './Fruits';
 
@@ -6,7 +5,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="App-floating-fruit-container">
+          <p className="App-floating-fruit" alt="blueberries">🫐</p>
+          <p className="App-floating-fruit" alt="blueberries">🫐</p>
+          <p className="App-floating-fruit" alt="blueberries">🫐</p>
+        </div>
         <h1>
           Howdy!
         </h1>

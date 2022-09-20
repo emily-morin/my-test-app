@@ -2,30 +2,35 @@
   text-align: center;
 }
 
-.App-logo {
+.App-floating-fruit {
   height: 20vmin;
   pointer-events: none;
 }
 
 h1 {
   font-family:'Roboto', sans-serif;
+  margin-bottom: 60px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App-floating-fruit {
+    animation: App-logo-spin infinite 15s linear;
   }
 }
 
 .App-header {
-  background-color: purple;
+  background: linear-gradient(to bottom, #d4d4f7 0%, #fff 100%);
   min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.App-floating-fruit-container {
+  display: flex;
+  gap: 40vmin;
 }
 
 .App-link {
