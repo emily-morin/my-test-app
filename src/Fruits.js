@@ -14,7 +14,7 @@ class Fruits extends Component {
     chooseFruit = (e) => {
         let chosenFruit = e.target.value;
 
-        alert(`You clicked ${chosenFruit} !`);
+        // alert(`You clicked ${chosenFruit} !`);
 
         let newChoices = [chosenFruit, ...this.state.choices];
 
@@ -23,9 +23,13 @@ class Fruits extends Component {
         });
     }
 
+    // removeFruit = (e) => {}
+    // function to remove a fruit from the list of chosen fruits
+    // design JSX to show an X the user can click to trigger this function
+
     foodOptions = this.fruits.map((fruit, index) => {
         return (
-            <button onClick={this.chooseFruit} key={index} value={fruit} className="Fruits-button">{fruit}</button>
+                <button onClick={this.chooseFruit} key={index} value={fruit} className="Fruits-button">{fruit}</button>
         );
     }
     );
